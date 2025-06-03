@@ -628,7 +628,7 @@
           and find that outlier patches in the residual stream appear after the MLP of layer 6 in OpenCLIP.
           Subsequently, the max attention score increase dramatically, suggesting that the MLP increases the norms of certain patches and leads to anomalous attention patterns.
           We find that an extremely small set of neurons with corresponding outlier activations appear in the preceding layers before outliers patches form.
-          For instance, we find 10 out of ~37000 neurons in OpenCLIP ViT-B/16 with this property.
+          For instance, we find less than 10 out of ~37000 neurons in OpenCLIP ViT-B/16 with this property.
           Given their importance for the formation of outliers, we call them "register neurons." 
           We present a subset of activation patterns arising from register neurons in the bottom row. 
         </div>
