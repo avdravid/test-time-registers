@@ -799,6 +799,26 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="container">
+      <h2>Adding Test-Time Registers to Vision-Language Models</h2>
+      <div class="figure">
+        <div class="figure-caption">
+          We add a test-time register to the CLIP ViT-L/14 vision encoder of <a href="https://huggingface.co/xtuner/llava-llama-3-8b">LLaVA-Llama-3-8B</a>, improving its interpretability while maintaining benchmark performance. 
+          Below, we visualize the patch norm map of the last layer of the vision encoder before projection into the language model input space. Next, we visualize the average attention across all layers and heads of the language
+          model from the response token to the visual tokens. Without a test-time register, the outlier visual tokens lead to artifacts in the language model’s attention. Adding a test-time register removes
+          outliers as seen in the patch norm map, resulting in more interpretable cross-modal attention. This provides clearer insights into the model's behavior (e.g., attention is placed on the parking spot "32" which looks like "28" upside down).
+          
+        </div>
+        <img src="./images/vlm_results.jpg" alt="Vision Transformers Research Overview">
+      </div>
+
+      
+    </div>
+  </section>
+
+
+
   <!-- Citation Section -->
   <section class="section">
     <div class="container">
@@ -817,16 +837,13 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p style="margin-bottom: 1rem;">© 2024 UC Berkeley. All rights reserved.</p>
+      <p style="margin-bottom: 1rem;">© 2025 UC Berkeley. All rights reserved.</p>
       <div class="footer-links">
         <a href="https://arxiv.org/abs/2406.09413">
           <i class="fas fa-file-pdf"></i>
         </a>
         <a href="https://github.com/snap-research/weights2weights">
           <i class="fab fa-github"></i>
-        </a>
-        <a href="https://twitter.com">
-          <i class="fab fa-twitter"></i>
         </a>
       </div>
     </div>
