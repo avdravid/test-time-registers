@@ -129,6 +129,23 @@
       }
     }
 
+    /* Minimal Elegant NeurIPS Styling */
+    .neurips-minimal {
+      color: var(--gray);
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      letter-spacing: 0.5px;
+      display: block;
+      position: relative;
+      z-index: 10;
+    }
+
+    .neurips-minimal .highlight {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
     .authors {
       display: flex;
       flex-wrap: wrap;
@@ -539,11 +556,9 @@
   <section class="hero">
     <div class="hero-content">
       <h1>Vision Transformers Don't Need <em>Trained</em> Registers</h1>
-      <h2 style="color: black; display: block; position: relative; z-index: 10;">
-
-      <h2 class="neurips-minimal"> <span class="highlight"><em>NeurIPS</em> 2025</span> (Spotlight) </h2> .neurips-minimal { color: var(--gray); font-weight: 500; font-size: 1.1rem; margin: 1rem 0; letter-spacing: 0.5px; } .neurips-minimal .highlight { color: var(--primary); font-weight: 600; }
-  
-</h2>
+      <div class="neurips-minimal">
+        <span class="highlight"><em>NeurIPS</em> 2025</span> (Spotlight)
+      </div>
       
       <div class="authors">
         <span class="author-block">
